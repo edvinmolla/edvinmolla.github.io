@@ -50,8 +50,6 @@
         }
 
         .column {
-
-
             margin: 0;
             padding: 20px;
             /* Optional: You can add padding if needed */
@@ -68,11 +66,14 @@
 
         @media (max-width: 768px) {
             .container {
+                flex-direction: column; /* Change flex direction to column */
                 flex-wrap: wrap;
+                max-width: 400px;
             }
 
-            .column:not(:nth-child(2)) {
-                display: none;
+            .column {
+                display: block; /* Display all columns as block elements */
+                width: 100%; /* Make them take up full width */
             }
         }
 
@@ -92,8 +93,6 @@
             <p><a href="ads">feather in the wind</a></p>
             <p><a href="ads">minimalist humanity</a></p>
             <p><a href="ads">the personality advantage</a></p>
-
-
         </div>
 
         <div class="column">
@@ -109,9 +108,7 @@
                 life-related reflections. While I firmly believe that going through physical pain is the premiere way of
                 exploring your character, I've found writing to be as potent, if not more, in my journey of personal
                 discovery.
-
             </p>
-
         </div>
 
         <div class="column">
@@ -124,6 +121,5 @@
     </div>
 
 </body>
-
 
 </html>

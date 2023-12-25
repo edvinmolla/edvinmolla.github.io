@@ -68,12 +68,16 @@
             .container {
                 flex-direction: column; /* Change flex direction to column */
                 flex-wrap: wrap;
-                max-width: 400px;
+                max-width: 100%; /* Allow container to take full width */
             }
 
             .column {
                 display: block; /* Display all columns as block elements */
                 width: 100%; /* Make them take up full width */
+            }
+
+            .column:nth-child(2) {
+                max-width: 100%; /* Make the second column take up full width */
             }
         }
 

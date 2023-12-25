@@ -76,8 +76,8 @@
                 width: 100%; /* Make them take up full width */
             }
 
-            .column:nth-child(2) {
-                max-width: 100%; /* Make the second column take up full width */
+            .column:nth-child(n+3) {
+                display: none; /* Hide columns starting from the 3rd column on phone screens */
             }
         }
 
@@ -115,12 +115,13 @@
             </p>
         </div>
 
+        <!-- The following columns will be hidden on phone screens -->
         <div class="column">
-
+            <!-- Third column content -->
         </div>
 
         <div class="column">
-
+            <!-- Fourth column content -->
         </div>
     </div>
 

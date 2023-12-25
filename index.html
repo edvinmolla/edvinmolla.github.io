@@ -4,91 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edvin's Website</title>
+    <title>Your Minimalistic Blog</title>
     <style>
         body {
-            font-family: 'verdana';
+            font-family: 'Arial', sans-serif;
             margin: 0;
+            padding: 0;
+            animation: fadein 0.9s;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            max-width: 100%;
+            overflow-x: auto;
         }
 
         @font-face {
-            font-family: tv;
-            src: url("Taviraj-Medium.ttf");
+            font-family: circularbold;
+            src: url("circularbold.otf");
         }
-        
-        table {
-            border: 0;
-            cellspacing: 0;
-            cellpadding: 0;
-            width: 435px;
-            background-color: #fff;
+
+        @font-face {
+            font-family: circulartext;
+            src: url("circulartext.otf");
+        }
+
+        p {
+            font-family: "circulartext";
+            font-size: 13px;
+        }
+
+        h2 {
+            font-family: "circularbold";
+            font-size: 16px;
+        }
+
+        .column {
+
+
+            margin: 0;
             padding: 20px;
-            position: relative;
+            /* Optional: You can add padding if needed */
         }
 
-        h3 {
-            margin-bottom: 0.5em;
+        .column:nth-child(2) {
+            min-width: 370px;
+            max-width: 370px;
         }
 
-        img {
-            float: left; /* Float the image to the left */
-            margin-right: 10px; /* Add some margin to separate the image from text */
-  margin-top: 10px;
+        .column:not(:nth-child(2)) {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .column:not(:nth-child(2)) {
+                display: none;
+            }
+        }
+
+        a {
+            color: black;
         }
     </style>
 </head>
 
 <body>
 
-    <table>
-        <tbody>
-            <tr valign="top">
-                <td>
-                    <font size="2" face="verdana">
-                        <img src="https://media.licdn.com/dms/image/D5603AQEs3VKavXhioQ/profile-displayphoto-shrink_200_200/0/1699822866957?e=1705536000&v=beta&t=CkPYJ-N_6efGcqvt7IG26mUElO95NhM3CYRSLk_yb5w" alt="Profile Image" width="50"> 
-                        <p>I'm Edvin, an undergraduate at UCLA studying applied mathematics with a focus in Machine
-                            Learning
-                            and its applications in multiple fields. I find great excitement in doing things that have
-                            a high probability of failure. I find it to be the quickest path to a unique learning
-                            experience.
-                        </p>
+    <div class="container">
+        <div class="column" style="min-width: 200px;">
+            <h2 style="color: transparent;">space</h2>
+            <p><a href="index.html" style="background-color: black; color: white; padding: 2px 4px;">edvin</a></p>
+            <p><a href="positiverate.html">positive rate</a></p>
+            <p><a href="ads">feather in the wind</a></p>
+            <p><a href="ads">minimalist humanity</a></p>
+            <p><a href="ads">the personality advantage</a></p>
 
-                        <p>This website serves as my public journal, covering a spectrum of topics from technical writings to life-related reflections. While I firmly believe that going through physical pain is
-                            the
-                            premiere way of exploring your character, I've found writing to be as potent, if not
-                            more,
-                            in my journey of personal discovery.</p>
 
-                        <!-- <p>There is no shortage of successful (but miserable) people in the world. I've come to realize
-                            that
-                            the best metric for success is not just a positive cash flow on your balance, but a mind at
-                            peace,
-                            and a life congruent with your values and beliefs.
-                        </p> -->
+        </div>
 
-                        <br>
-                        <span style="font-weight: 700; text-decoration: underline;">Writings</span>
-                        <font size="1" face="verdana">
-                        <a href="tpom.html">
-                            <h3>a feather in the wind</h3>
-                        </a>
-                        <a href="#">
-                            <h3>humanity is minimalistic</h3>
-                        </a>
-                        <a href="#">
-                            <h3>the personality advantage</h3>
-                        </a>
-                        </font>
+        <div class="column">
+            <!-- Second column content (main text) -->
+            <h2>edvin molla</h2>
+            <p>
+                I'm Edvin, an undergraduate at UCLA studying applied mathematics with a focus in Machine Learning and
+                its applications in multiple fields. I find great excitement in doing things that have a high
+                probability of failure. I find it to be the quickest path to a unique learning experience.
 
-                    </font>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                <br /><br />
+                This website serves as my public journal, covering a spectrum of topics from technical writings to
+                life-related reflections. While I firmly believe that going through physical pain is the premiere way of
+                exploring your character, I've found writing to be as potent, if not more, in my journey of personal
+                discovery.
+
+            </p>
+
+        </div>
+
+        <div class="column">
+
+        </div>
+
+        <div class="column">
+
+        </div>
+    </div>
 
 </body>
+
 
 </html>

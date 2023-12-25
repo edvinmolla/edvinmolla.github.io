@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Minimalistic Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: fadein 0.9s;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            display: flex;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        @font-face {
+            font-family: circularbold;
+            src: url("circularbold.otf");
+        }
+
+        @font-face {
+            font-family: circulartext;
+            src: url("circulartext.otf");
+        }
+
+        p {
+            font-family: "circulartext";
+            font-size: 13px;
+        }
+
+        h2 {
+            font-family: "circularbold";
+            font-size: 16px;
+        }
+
+        .column {
+
+
+            margin: 0;
+            padding: 20px;
+            /* Optional: You can add padding if needed */
+        }
+
+        .column:nth-child(2) {
+            min-width: 370px;
+            max-width: 370px;
+        }
+
+        .column:not(:nth-child(2)) {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .column:not(:nth-child(2)) {
+                display: none;
+            }
+        }
+
+        a {
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="column" style="min-width: 200px;">
+            <h2 style="color: transparent;">space</h2>
+            <p><a href="index.html" >edvin</a></p>
+            <p><a href="positiverate.html" style="background-color: black; color: white; padding: 2px 4px;">positive rate</a></p>
+            <p><a href="ads" >feather in the wind</a></p>
+            <p><a href="ads" >minimalist humanity</a></p>
+            <p><a href="ads" >the personality advantage</a></p>
+
+
+        </div>
+
+        <div class="column">
+            <!-- Second column content (main text) -->
+            <h2>positive rate</h2>
+            <p>
+                this is an analogy i've come to adopt when it comes to taking things off the ground.
+                <br /><br />
+
+                usually the first stage of getting good at executing on ideas is to gain momentum as quickly as
+                possible in order to capitalize on the moental burst of ideas, energy, and enthusiasm.
+
+                <br /><br />
+
+                while it's only natural for the dopamine rush to eventually dip, i've come to realize that
+                it's better to take advantage from it while you have it.
+                <br /><br />
+
+                i vividly remember resonating with this line while reading the Almanack of Naval Ravikant
+                <br /><br />
+                <em style="background-color: black; color: white; padding: 2px 4px;">inspiration is perishable - act on it immediately.</em>
+
+                <br /><br />
+
+                however, i've also come to learn that taking things off the ground is a totally different ballgame.
+                similar to how an airplane first has to gain speed and momentum before starting to roll of the ground,
+                it's the
+                phase right after taking off and during climb, that most accidents happen, statistically. this must mean
+                that climbing is a vital, and complex process, heavily prone to erros and failures, which makes the
+                process of scaling your idea a tricky endeavour.
+
+                <br/><br/>
+
+                pilots have a special term to signal a normal, safe climb, which is said by the pilot monitoring the instruments.
+                the term is <em>positive rate</em>, and signifies a normal, and expected climb rate.
+
+                <br/><br/>
+
+                now, pilots operate in a much more predicabtle environment than a new business does. a pilot usually has thousands of hours 
+                of expeirence with one specific type of aircraft. they're supposed to know it inside out, and they develop a <i>feel</i> for the 
+                aircraft that helps in them recognizing anomalies.
+
+                <br/><br/>
+
+                an idea, on the other hand, is like a baby. it comes into this world with aboslutely no protection agianst environmental factors. 
+                a new idea is easiest to kill in the earliest stages of its life, hence why one must act swiftly.
+
+                <br/><br/>
+
+                while one can get good at gaining momentum for new ideas, it becomes increasingly unpredictable to use a certain <i>playbook</i> 
+                as a standard approach toward scaling your idea. the main reason behind this is that there' an infinite 
+                amount of possibilities as to how your actions will turn out, and most ideas don't even make to 
+                to a far enough point where you're taking it off the ground, hence removing the opportunity for you to 
+                learn more about the process.
+
+                <br/><br/>
+
+                ultimately, it is hard. and it should be. every idea is inherently different. it is born out of a different 
+                pattern of thoughts, and it's acted upon with a different amount of experience and knowledge.
+
+                <br/><br/>
+
+                however, one must remember to look out for any anomalies indicating anything other than a positive rate, 
+                thus indicating a need for swift and delibarte action to try to save your idea from coming down crashing.
+
+            </p>
+
+        </div>
+
+        <div class="column">
+
+        </div>
+
+        <div class="column">
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>

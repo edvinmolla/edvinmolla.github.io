@@ -41,12 +41,12 @@
 
         p {
             font-family: "circulartext";
-            font-size: 13px;
+            font-size: 14px; /* Adjusted font size for better readability */
         }
 
         h2 {
             font-family: "circularbold";
-            font-size: 16px;
+            font-size: 18px; /* Adjusted font size for better readability */
         }
 
         .column {
@@ -67,13 +67,11 @@
         @media (max-width: 768px) {
             .container {
                 flex-direction: column; /* Change flex direction to column */
-
-                max-width: 100%; /* Allow container to take full width */
             }
 
             .column {
                 display: block; /* Display all columns as block elements */
-                width: 500px; /* Make them take up full width */
+                width: 100%; /* Make them take up full width */
             }
 
             .column:nth-child(n+3) {
